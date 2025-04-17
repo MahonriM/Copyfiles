@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Copy files with robocopy</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <h1 class="titulo">Copy files with robocopy</h1>
+    <article>
+        <div>
+            <ul class="lista-tipografica">
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Description">Description</a></li>
+            </ul>
+            <br>
+            <div id="Introduction">
+                <p class="stilo">In this website you will learn about the use of robocopy command for copy files in windows.
+                    This command help us to copy and move files and folders from one place to other unfortunately this commad only works for windows system. 
+                </p>
+                <br>
+                <p class="stilo">We can use this command to copy and move files, folders to a specific destination</p>
+            </div>
+            <br>
+            <h2 id="Description" class="stilo">Instructions</h2>
+                    <ul class="stilo">
+                        <li>Open command prompt with admin rights.</li>
+                        <br>
+                        <li>Write the next command robocopy \drivename \folder \otherfolder \ drivename  /E /mt /z and press enter</li>
+                        <li>The first part of robocopy is the source and the second part is the destination</li>
+                        <li> <p>/E Copy subfolders including empty subfolders
+
+                            /mt allows you to specify the number of threads robocopy will use to copy files. The maximum is 128.
+                            
+                            /z Copy files in restartable mode</p></li>
+                        <li>Sometimes some files are missing and it fails to copy however most of the times It will help you to move and copy files</li>
+                    </ul>
+               <h2 class="stilo">Examples</h2>
+               <div class="stilo">
+                <p>For move files from one location to another one in the same PC or drive</p>
+                <br>
+                <ul>
+                    <li><p>robocopy C:\Users\Music\musica1 C:\Users\Videos  /E /mt /z /xo</p></li>
+                    <li>robocopy F:\Music  D:\Music  /E /mt /z /xo
+                    </li>
+                </ul>
+
+                <p></p>
+ 
+               </div>
+        </div>
+    </article>
+</body>
+</html>
